@@ -9,7 +9,9 @@ int main(){
     int populacao_1, populacao_2;
     float area_1, area_2;
     float pib_1, pib_2;
-    int pontos_turisticos_1, pontos_turisticos_2;  
+    int pontos_turisticos_1, pontos_turisticos_2;
+    float densidade_1, densidade_2;
+    float pib_pc_1, pib_pc_2;
     
     //Identificando ação realizada - carta 1 de 2
     printf("SUPER TRUNFO - Cadastrando Carta 1 de 2\n\n");
@@ -37,6 +39,9 @@ int main(){
 
     printf("\nDigite a quantidade de pontos turísticos da cidade: ");
     scanf("%d", &pontos_turisticos_1);
+
+    densidade_1 = populacao_1 / area_1;
+    pib_pc_1 = (pib_1 * 1000000000) / populacao_1; //Multiplicando por 1bi para obter o valor inteiro do pib
     getchar();
 
     
@@ -66,6 +71,10 @@ int main(){
 
     printf("\nDigite a quantidade de pontos turísticos da cidade: ");
     scanf("%d", &pontos_turisticos_2);
+
+    densidade_2 = populacao_2 / area_2;
+    pib_pc_2 = (pib_2 * 1000000000) / populacao_2; //Multiplicando por 1bi para obter o valor inteiro do pib
+
     getchar();
 
 
@@ -73,9 +82,9 @@ int main(){
     printf("\n\nCadastros realizados com sucesso, acompanhe as informações abaixo\n\n");
     
     //Exibindo informações primeira carta
-    printf("CARTA 1:\nEstado: %c \nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d", estado_1, codigo_1, nome_cidade_1, populacao_1, area_1, pib_1, pontos_turisticos_1);
+    printf("CARTA 1:\nEstado: %c \nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPib per Capta: %.2f reais", estado_1, codigo_1, nome_cidade_1, populacao_1, area_1, pib_1, pontos_turisticos_1, densidade_1, pib_pc_1);
 
     //Exibindo informações segunda carta
-    printf("\n\nCARTA 2:\nEstado: %c \nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d \n", estado_2, codigo_2, nome_cidade_2, populacao_2, area_2, pib_2, pontos_turisticos_2);
+    printf("\n\nCARTA 2:\nEstado: %c \nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPib per Capta: %.2f reais \n", estado_2, codigo_2, nome_cidade_2, populacao_2, area_2, pib_2, pontos_turisticos_2, densidade_2, pib_pc_2);
 
 }
