@@ -92,19 +92,31 @@ int main(){
 
 
     //Identificando ação realizada - cadastro efetuado com sucesso
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
     printf("\n\nCadastros realizados com sucesso, acompanhe as informações abaixo\n\n");
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
     
     //Exibindo informações primeira carta
     printf("CARTA 1:\nEstado: %c \nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPib per Capta: %.2f reais", estado_1, codigo_1, nome_cidade_1, populacao_1, area_1, pib_1, pontos_turisticos_1, densidade_1, pib_pc_1);
+
+    printf("----------------------------------------------------------------------------\n");
 
     //Exibindo informações segunda carta
     printf("\n\nCARTA 2:\nEstado: %c \nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPib per Capta: %.2f reais \n", estado_2, codigo_2, nome_cidade_2, populacao_2, area_2, pib_2, pontos_turisticos_2, densidade_2, pib_pc_2);
 
 
     //Comparação de Cartas
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
     printf("Comparação de Cartas:\n");
-    printf("População: ");
-    printf("Área")
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+    printf("População: %lu\n", populacao_1 > populacao_2);
+    printf("Área: %lu\n", area_1 > area_2);
+    printf("Pib: %lu\n", pib_1 > pib_2);
+    printf("Pontos Turísticos: %lu\n", pontos_turisticos_1 > pontos_turisticos_2);
+    printf("Densidade Populacional: %lu\n", densidade_1 > densidade_2);
+    printf("Pib Per Capta: %lu\n", pib_pc_1 > pib_pc_2);
+    printf("Super Poder: %lu\n", super_poderC1, super_poderC2);
 
-    
+
+    return 0;    
 }
