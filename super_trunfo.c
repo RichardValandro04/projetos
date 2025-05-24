@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <string.h>
-//teste
+
 int main(){
     //Declarando Variáveis
     char estado_1, estado_2;
     char codigo_1[4], codigo_2[4];
     char nome_cidade_1[25], nome_cidade_2[25];
-    int populacao_1, populacao_2;
+    unsigned long int populacao_1, populacao_2;
     float area_1, area_2;
     float pib_1, pib_2;
     int pontos_turisticos_1, pontos_turisticos_2;
     float densidade_1, densidade_2;
     float pib_pc_1, pib_pc_2;
+    f
     
     //Identificando ação realizada - carta 1 de 2
     printf("SUPER TRUNFO - Cadastrando Carta 1 de 2\n\n");
