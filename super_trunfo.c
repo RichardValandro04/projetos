@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-//ola
+
 int main(){
     //Declarando Variáveis
     char estado_1, estado_2;
