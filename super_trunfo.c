@@ -12,7 +12,8 @@ int main(){
     int pontos_turisticos_1, pontos_turisticos_2;
     float densidade_1, densidade_2;
     float pib_pc_1, pib_pc_2;
-    f
+    float super_poderC1, super_poderC2;
+    float densidadeInversa1, densidadeInversa2;
     
     //Identificando ação realizada - carta 1 de 2
     printf("SUPER TRUNFO - Cadastrando Carta 1 de 2\n\n");
@@ -41,8 +42,6 @@ int main(){
     printf("\nDigite a quantidade de pontos turísticos da cidade: ");
     scanf("%d", &pontos_turisticos_1);
 
-    densidade_1 = populacao_1 / area_1;
-    pib_pc_1 = (pib_1 * 1000000000) / populacao_1; //Multiplicando por 1bi para obter o valor inteiro do pib
     getchar();
 
     
@@ -73,10 +72,23 @@ int main(){
     printf("\nDigite a quantidade de pontos turísticos da cidade: ");
     scanf("%d", &pontos_turisticos_2);
 
+    getchar();
+    
+
+    //Calculando Densidade e Pib PerCapta
+    densidade_1 = populacao_1 / area_1;
+    pib_pc_1 = (pib_1 * 1000000000) / populacao_1; //Multiplicando por 1bi para obter o valor inteiro do pib
+    
     densidade_2 = populacao_2 / area_2;
     pib_pc_2 = (pib_2 * 1000000000) / populacao_2; //Multiplicando por 1bi para obter o valor inteiro do pib
 
-    getchar();
+    
+    //Calculando Densidade Inversa e Super Poder
+    densidadeInversa1 = 1 / densidade_1;
+    densidadeInversa2 = 1 / densidade_2;
+
+    super_poderC1 = (float)populacao_1 + area_1 + pib_1 + (float)pontos_turisticos_1 + pib_pc_1 + densidadeInversa1;
+    super_poderC2 = (float)populacao_2 + area_2 + pib_2 + (float)pontos_turisticos_2 + pib_pc_2 + densidadeInversa2;
 
 
     //Identificando ação realizada - cadastro efetuado com sucesso
@@ -88,4 +100,11 @@ int main(){
     //Exibindo informações segunda carta
     printf("\n\nCARTA 2:\nEstado: %c \nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPib per Capta: %.2f reais \n", estado_2, codigo_2, nome_cidade_2, populacao_2, area_2, pib_2, pontos_turisticos_2, densidade_2, pib_pc_2);
 
+
+    //Comparação de Cartas
+    printf("Comparação de Cartas:\n");
+    printf("População: ");
+    printf("Área")
+
+    
 }
