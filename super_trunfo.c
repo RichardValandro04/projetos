@@ -116,6 +116,6 @@ int main(){
     printf("Densidade Populacional: %lu\n", densidade_1 > densidade_2);
     printf("Pib Per Capta: %lu\n", pib_pc_1 > pib_pc_2);
     printf("Super Poder: %lu\n", super_poderC1 > super_poderC2);
-    
+
     return 0;    
 }
