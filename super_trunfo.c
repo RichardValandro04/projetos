@@ -120,5 +120,19 @@ int main(){
     printf("Super Poder: %u\n", super_poderC1 > super_poderC2);
     printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
 
+    //Comparação Atributo Escolhido
+    printf("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+    printf("Comparação de Cartas (Atributo: População)\n");
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+
+    printf("Carta 1 - %s: %lu\n", nome_cidade_1, populacao_1);
+    printf("Carta 2 - %s: %lu\n", nome_cidade_2, populacao_2);
+    
+    if(populacao_1 > populacao_2){
+        printf("Carta 1 (%s) Venceu!\n", nome_cidade_1);
+    }else{
+        printf("Carta 2 (%s) Venceu!\n", nome_cidade_2);
+    }
+
     return 0;    
 }
