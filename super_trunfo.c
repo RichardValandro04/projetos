@@ -115,7 +115,7 @@ int main(){
     printf("Área: %u\n", area_1 > area_2);
     printf("Pib: %u\n", pib_1 > pib_2);
     printf("Pontos Turísticos: %u\n", pontos_turisticos_1 > pontos_turisticos_2);
-    printf("Densidade Populacional: %u\n", densidade_1 > densidade_2);
+    printf("Densidade Populacional: %u\n", densidade_1 < densidade_2);
     printf("Pib Per Capta: %u\n", pib_pc_1 > pib_pc_2);
     printf("Super Poder: %u\n", super_poderC1 > super_poderC2);
     printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
