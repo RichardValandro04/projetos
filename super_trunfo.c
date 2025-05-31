@@ -14,7 +14,8 @@ int main(){
     float pib_pc_1, pib_pc_2;
     float super_poderC1, super_poderC2;
     float densidadeInversa1, densidadeInversa2;
-    
+    int escolhaComparacao;
+
     //Identificando ação realizada - carta 1 de 2
     printf("SUPER TRUNFO - Cadastrando Carta 1 de 2\n\n");
 
@@ -107,7 +108,7 @@ int main(){
     printf("CARTA 2:\nEstado: %c \nCódigo: %s\nNome da Cidade: %s\nPopulação: %lu\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPib per Capta: %.2f reais\n", estado_2, codigo_2, nome_cidade_2, populacao_2, area_2, pib_2, pontos_turisticos_2, densidade_2, pib_pc_2);
 
 
-    //Comparação de Cartas
+    /*Comparação de Cartas - COMENTADO PARA RECEBER NOVA FUNCIONALIDADE DE MENU INTERATIVO
     printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
     printf("Comparação de Cartas:\n");
     printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
@@ -119,7 +120,7 @@ int main(){
     printf("Pib Per Capta: %u\n", pib_pc_1 > pib_pc_2);
     printf("Super Poder: %u\n", super_poderC1 > super_poderC2);
     printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
-
+    
     //Comparação Atributo Escolhido
     printf("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
     printf("Comparação de Cartas (Atributo: População)\n");
@@ -133,6 +134,20 @@ int main(){
     }else{
         printf("Carta 2 (%s) Venceu!\n", nome_cidade_2);
     }
+    */
+    
+    //Menu interativo
+
+    printf("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+    printf("COMPARAÇÃO DE ATRIBUTOS\n");
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+    printf("1. População\n");
+    printf("2. Área\n");
+    printf("3. PIB\n");
+    printf("4. Número de Pontos Turísticos\n");
+    printf("")
+
+
 
     return 0;    
 }
